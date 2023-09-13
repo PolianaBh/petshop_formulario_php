@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+
+      <head>
+	           <meta name="author" content="Alessandra Bertini">    
+	           <meta charset="UTF-8">
+	           <title>CADASTRO - PET SHOP</title>
+	  </head>
+	  
+	  
+
+<body>
+<font face="arial" size="6"><center><b>PET SHOP</b></center></font>
+<font size="6" color="olive"><center><b><i>CADASTRO DE CLIENTES</i></b></center></font>
+<hr>
+
+<form method="post" action="cadastro.php">
+<p>
+<font size="4" face="arial"> 
+NOME DO CLIENTE:&nbsp;<input type="text" name="nome_cliente" size="50" maxlength="50"><br><br>
+
+DATA DE NASCIMENTO: <input type="date" name="data_nascimento" size="12" maxlength="10" placeholder="__/__/__"><br><br>
+
+SEXO: <input type="radio" name="sexo" value="masculino">Masculino
+      <input type="radio" name="sexo" value="feminino">Feminino<br><br>
+
+ENDEREÇO:&nbsp;<input type="text" name="endereco" size="58"><br><br>
+
+TIPO DE ANIMAL:
+<select id = "tipo_animal" name="tipo_animal">
+<option>Selecione...</option>
+<option>Cachorro</option>
+<option>Gato</option>
+<option>Coelho</option>
+<option>Passarinho</option>
+<option>Papagaio</option>
+<option>Cavalo</option>
+</select><br><hr>
+
+RESERVAR:<br>
+<label><input type="checkbox" name="reservas[]" value="Corte">Corte</label><br> 
+<label><input type="checkbox" name="reservas[]" value="Tosa">Tosa</label><br> 
+<label><input type="checkbox" name="reservas[]" value="Corte">Corte</label><br>
+<label><input type="checkbox" name="reservas[]" value="Passeio">Passeio</label><br>
+<label><input type="checkbox" name="reservas[]" value="Consulta">Consulta</label><br><br>
+
+OUTROS SERVIÇOS:<br>
+<textarea rows="4" cols="48" name="outros">
+</textarea>
+  
+
+
+</font>
+</p><br>
+<input type="submit" name="enviar" value="Enviar">
+&nbsp;&nbsp;&nbsp;<input type="reset" name="reset" value="Limpar">
+
+
+</form>
+
+
+</body>
+
+
+</html>
